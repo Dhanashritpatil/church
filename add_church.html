@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Church Konnect Dashboard</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+ 
+  <link rel="stylesheet" href="allcss.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="logo-section">
+        <img src="logo/LOGO NEW.png" alt="Logo" class="logo">
+        <!-- <h2>CHURCH KONNECT <span class="version">v.01</span></h2> -->
+      </div>
+      <ul class="sidebar-menu">
+        <li class="active"><button><i class="fas fa-home"></i><span>Dashboard</span></button></li>
+        <li><button><i class="fas fa-praying-hands"></i><span>Prayer Requests</span></button></li>
+        <li><button><i class="fas fa-plus-circle"></i><span>Add Church Request</span></button></li>
+        <li><button><i class="fas fa-hand-holding-heart"></i><span>Donations</span></button></li>
+        <li><button><i class="fas fa-comment-dots"></i><span>Testimonials</span></button></li>
+        <li><button><i class="fas fa-music"></i><span>Songs</span></button></li>
+        <li><button><i class="fas fa-book"></i><span>Song Books</span></button></li>
+        <li><button><i class="fas fa-bible"></i><span>Daily Manna</span></button></li>
+        <li><button><i class="fas fa-calendar-alt"></i><span>Events</span></button></li>
+      </ul>
+      <div class="user-info">
+        <img src="user.jpg" class="user-img" />
+        <div class="user-details">
+          <p>John</p>
+          <small>Account Manager</small>
+        </div>
+        <i class="fas fa-chevron-down dropdown-icon"></i>
+      </div>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main">
+      <header class="dashboard-header" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+        <h1>Hello John 👋</h1>
+    
+        <div style="display: flex; align-items: center; gap: 1rem;">
+          <button class="btn-add-church">Add Church</button>
+          <input type="text" placeholder="Search" class="search-bar" />
+        </div>
+      </header>
+    
+
+      <!-- Summary Cards -->
+      <section class="cards">
+        <div class="card"><i class="fas fa-users icon green"></i><div><p>Users Active</p><h2>5,423</h2></div></div>
+        <div class="card"><i class="fas fa-user-slash icon orange"></i><div><p>User Deactivated</p><h2>1,893</h2></div></div>
+        <div class="card"><i class="fas fa-desktop icon teal"></i><div><p>Open Request</p><h2>189</h2></div></div>
+      </section>
+
+      <!-- Users Table -->
+      <section class="table-section">
+        <div class="table-header">
+          
+            <div class="add-church-header">
+                <h2>Add church Request </h2>
+                <a href="#">Aprove/Disaprove  Prayer Request </a>
+            </div>
+          
+
+          <div class="controls">
+            <input type="text" placeholder="Search">
+            <select>
+              <option>Newest</option>
+              <option>Oldest</option>
+            </select>
+          </div>
+        </div>
+        <table>
+          <thead>
+            <tr>
+              <th>User Name</th><th>Request For</th><th>Contanct Details</th><th>Prayer Details</th><th>Place</th><th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>Rajendra Dhanvi</td><td>Church Name 1</td><td>(225) 555-0118</td><td>Established in 2007</td><td>Thane</td><td><div class="btn-group">
+                <button class="btn green">Approve</button>
+                <button class="btn red">Delete</button>
+              </div></tr>
+            <tr><td>Ankita</td><td>Church Name 2</td><td>(205) 555-0100</td><td>Established in 2007</td><td>Vikhroli</td>  <td>
+                <div class="btn-group">
+                  <button class="btn green">Approve</button>
+                  <button class="btn red">Delete</button>
+                </div>
+              </td>
+              </tr>
+            <tr><td>Raj</td><td>Church Name 3</td><td>(302) 555-0107</td><td>Established in 2007 </td><td>Thane</td>  <td>
+                <div class="btn-group">
+                  <button class="btn green">Approve</button>
+                  <button class="btn red">Delete</button>
+                </div>
+              </td></tr>
+            <tr><td>Dhanashree</td><td>Church Name 4</td><td>(252) 555-0126</td><td>Established in 2007</td><td>Kanjur Marg</td>  <td>
+                <div class="btn-group">
+                  <button class="btn green">Approve</button>
+                  <button class="btn red">Delete</button>
+                </div>
+              </td></tr>
+            <tr><td>Jerome Bell</td><td>Church Name 5</td><td>(629) 555-0129</td><td>Established in 2007</td><td>Kurla</td>  <td>
+                <div class="btn-group">
+                  <button class="btn green">Approve</button>
+                  <button class="btn red">Delete</button>
+                </div>
+              </td></tr>
+            <tr><td>Kathryn Murphy</td><td>Church Name 6</td><td>(406) 555-0120</td><td>Established in 2007</td><td>Ghatkopar</td>  <td>
+                <div class="btn-group">
+                  <button class="btn green">Approve</button>
+                  <button class="btn red">Delete</button>
+                </div>
+              </td></tr>
+            <tr><td>Jacob Jones</td><td>Church Name 7</td><td>(208) 555-0112</td><td>Established in 2007</td><td>Thane</td>  <td>
+                <div class="btn-group">
+                  <button class="btn green">Approve</button>
+                  <button class="btn red">Delete</button>
+                </div>
+              </td></tr>
+            <tr><td>Kristin Watson</td><td>Church Name 8</td><td>(704) 555-0127</td><td>Established in 2007</td><td>Kurla</td>  <td>
+                <div class="btn-group">
+                  <button class="btn green">Approve</button>
+                  <button class="btn red">Delete</button>
+                </div>
+              </td></tr>
+          </tbody>
+        </table>
+        <div class="pagination">
+            <span class="pagination-info">Showing data 1 to 8 of 256K entries</span>
+            <div class="pagination-pages">
+                <span class="page active"></span>
+              <span class="page active">1</span>
+              <span class="page">2</span>
+              <span class="page">3</span>
+              <span class="page">4</span>
+              <span class="page">...</span>
+              <span class="page">40</span>
+            </div>
+          </div>
+          
+      </section>
+    </main>
+  </div>
+  <script src="dashboard.js"></script>
+</body>
+</html>

@@ -12,21 +12,27 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="logo-section">
-        <img src="logo/LOGO NEW.png" alt="Logo" class="logo">
+        <img src="logo/Church_Connect_Logo.png" alt="Logo" class="logo">
         <!-- <h2>CHURCH KONNECT <span class="version">v.01</span></h2> -->
       </div>
       <ul class="sidebar-menu">
-        <li class="active"><button><i class="fas fa-home"></i><span>Dashboard</span></button></li>
-        <li><button><i class="fas fa-praying-hands"></i><span>Prayer Requests</span></button></li>
+        <li><button><i class="fas fa-home"></i><span>Dashboard</span></button></li>
+        <li class="active"><button><i class="fas fa-praying-hands"></i><span>Prayer Requests</span></button></li>
         <li><button><i class="fas fa-plus-circle"></i><span>Add Church Request</span></button></li>
-        <li><button><i class="fas fa-hand-holding-heart"></i><span>Donations</span></button></li>
+        <li><button><i class="fas fa-hand-holding-heart"></i><span>Offering</span></button></li>
         <li><button><i class="fas fa-comment-dots"></i><span>Testimonials</span></button></li>
         <li><button><i class="fas fa-music"></i><span>Songs</span></button></li>
         <li><button><i class="fas fa-book"></i><span>Song Books</span></button></li>
         <li><button><i class="fas fa-bible"></i><span>Daily Manna</span></button></li>
         <li><button><i class="fas fa-calendar-alt"></i><span>Events</span></button></li>
       </ul>
-      <div class="user-info">
+      <ul class="dropdown-menu">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+      
+      <div class="user-info" onclick="toggleDropdown()">
         <img src="images/user_456141.png" class="user-img" />
         <div class="user-details">
           <p>John</p>
@@ -34,6 +40,7 @@
         </div>
         <i class="fas fa-chevron-down dropdown-icon"></i>
       </div>
+      
     </aside>
 
     <!-- Main content -->

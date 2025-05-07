@@ -11,7 +11,7 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="logo-section">
-        <img src="logo/LOGO NEW.png" alt="Logo" class="logo">
+        <img src="logo/Church_Connect_Logo.png" alt="Logo" class="logo">
       </div>
       <ul class="sidebar-menu">
         <li><button><i class="fas fa-home"></i><span>Dashboard</span></button></li>
@@ -24,7 +24,22 @@
         <li><button><i class="fas fa-bible"></i><span>Daily Manna</span></button></li>
         <li><button><i class="fas fa-calendar-alt"></i><span>Events</span></button></li>
       </ul>
-      <div class="user-info">
+      <!-- <div class="user-info">
+        <img src="images/user_456141.png" class="user-img" />
+        <div class="user-details">
+          <p>John</p>
+          <small>Account Manager</small>
+        </div>
+        <i class="fas fa-chevron-down dropdown-icon"></i>
+      </div> -->
+
+      <ul class="dropdown-menu">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+      
+      <div class="user-info" onclick="toggleDropdown()">
         <img src="images/user_456141.png" class="user-img" />
         <div class="user-details">
           <p>John</p>
@@ -32,6 +47,7 @@
         </div>
         <i class="fas fa-chevron-down dropdown-icon"></i>
       </div>
+      
     </aside>
 
     <!-- Main content -->
@@ -58,7 +74,7 @@
         <div class="table-header">
             
               <div class="add-church-header">
-                <h2>Songs Books</h2>
+                <h2>Songs Books</h2><br>
                 <a href="#">Add/Removes  Songs Books </a>
             </div>
         
@@ -101,5 +117,7 @@
       </section>
     </main>
   </div>
+
+  <script src="dashboard.js"></script>
 </body>
 </html>

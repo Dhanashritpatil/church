@@ -11,11 +11,11 @@
     <!-- Sidebar -->
     <aside class="sidebar">
       <div class="logo-section">
-        <img src="logo.png" alt="Logo" class="logo">
-        <h2>CHURCH KONNECT <span class="version">v.01</span></h2>
+        <img src="logo/Church_Connect_Logo.png" alt="Logo" class="logo">
+       
       </div>
       <ul class="sidebar-menu">
-        <li class="active"><button><i class="fas fa-home"></i><span>Dashboard</span></button></li>
+        <li ><button><i class="fas fa-home"></i><span>Dashboard</span></button></li>
         <li><button><i class="fas fa-praying-hands"></i><span>Prayer Requests</span></button></li>
         <li><button><i class="fas fa-plus-circle"></i><span>Add Church Request</span></button></li>
         <li><button><i class="fas fa-hand-holding-heart"></i><span>Donations</span></button></li>
@@ -23,16 +23,25 @@
         <li><button><i class="fas fa-music"></i><span>Songs</span></button></li>
         <li><button><i class="fas fa-book"></i><span>Song Books</span></button></li>
         <li><button><i class="fas fa-bible"></i><span>Daily Manna</span></button></li>
-        <li><button><i class="fas fa-calendar-alt"></i><span>Events</span></button></li>
+        <li class="active"><button><i class="fas fa-calendar-alt"></i><span>Events</span></button></li>
       </ul>
-      <div class="user-info">
-        <img src="user.jpg" class="user-img" />
+
+      <!-- User -->
+      <ul class="dropdown-menu">
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Logout</a></li>
+      </ul>
+      
+      <div class="user-info" onclick="toggleDropdown()">
+        <img src="images/user_456141.png" class="user-img" />
         <div class="user-details">
           <p>John</p>
           <small>Account Manager</small>
         </div>
         <i class="fas fa-chevron-down dropdown-icon"></i>
       </div>
+      
     </aside>
 
     <!-- Main content -->
@@ -40,22 +49,16 @@
       <header class="dashboard-header">
         <h1>Hello John 👋</h1>
         <input type="text" placeholder="Search" class="search-bar" />
-      </header>
-
-      <!-- Summary Cards -->
-      <section class="cards">
-        <div class="card"><i class="fas fa-users icon green"></i><div><p>Users Active</p><h2>5,423</h2></div></div>
-        <div class="card"><i class="fas fa-user-slash icon orange"></i><div><p>User Deactivated</p><h2>1,893</h2></div></div>
-        <div class="card"><i class="fas fa-desktop icon teal"></i><div><p>Open Request</p><h2>189</h2></div></div>
-      </section>
+      </header> <br>
 
       <!-- Users Table -->
       <section class="table-section">
         <div class="table-header">
-            <div>
-                <h3>Users </h3>
-                <a href="#">Active/Inactive Members</a>
-            </div>
+          <div class="add-church-header">
+            <h2>Events </h2><br>
+            <a href="#">Add/Edit/Remove Events </a>
+        </div>
+        
         
           <div class="controls">
             <input type="text" placeholder="Search">
@@ -68,19 +71,12 @@
         <table>
           <thead>
             <tr>
-              <th>User Name</th><th>Gender</th><th>Phone Number</th><th>Email</th><th>Place</th><th>Status</th>
+              <th>Event Tiltle</th><th>Description</th><th>Date And Time</th><th>Number OF Character</th><th>Action</th>
             </tr>
           </thead>
           <tbody>
-            <tr><td>Rajendra Dhanvi</td><td>Male</td><td>(225) 555-0118</td><td>raju@gmail.com</td><td>Kanjur marg</td><td><button class="btn green">Activate</button></td></tr>
-            <tr><td>Ankita</td><td>Female</td><td>(205) 555-0100</td><td>ankta@yahoo.com</td><td>Vashi</td><td><button class="btn red">Deactivate</button></td></tr>
-            <tr><td>Raj</td><td>Male</td><td>(302) 555-0107</td><td>raj@adobe.com</td><td>Thane</td><td><button class="btn red">Deactivate</button></td></tr>
-            <tr><td>Dhanashree</td><td>Female</td><td>(252) 555-0126</td><td>Dhanashree@tesla.com</td><td>Vikhroli</td><td><button class="btn green">Activate</button></td></tr>
-            <tr><td>Jerome Bell</td><td>Male</td><td>(629) 555-0129</td><td>jerome@gmail.com</td><td>Ghansoli</td><td><button class="btn green">Activate</button></td></tr>
-            <tr><td>Kathryn Murphy</td><td>Male</td><td>(406) 555-0120</td><td>kathryn@microsoft.com</td><td>Ghatkopar</td><td><button class="btn green">Activate</button></td></tr>
-            <tr><td>Jacob Jones</td><td>Male</td><td>(208) 555-0112</td><td>jacob@yahoo.com</td><td>Thane</td><td><button class="btn green">Activate</button></td></tr>
-            <tr><td>Kristin Watson</td><td>Male</td><td>(704) 555-0127</td><td>kristin@facebook.com</td><td>Kurla</td><td><button class="btn red">Deactivate</button></td></tr>
-          </tbody>
+            <tr><td>Mere Prabhu</td><td>Author 1</td><td>2nd may 2025</td><td>1325</td><td><button class="btn green">Edit</button><button class="btn red">Delete</button></td></tr>
+            <tr><td>Mere Prabhu</td><td>Author 1</td><td>2nd may 2025</td><td>1325</td><td><button class="btn green">Edit</button><button class="btn red">Delete</button></td></tr> </tbody>
         </table>
         <div class="pagination">
             <span class="pagination-info">Showing data 1 to 8 of 256K entries</span>
